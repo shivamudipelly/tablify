@@ -13,9 +13,21 @@ import {
   User,
 } from "lucide-react";
 
-export function Toolbar() {
+interface ToolbarProps {
+  onAddRow: () => void;
+  onAddColumn: () => void;
+}
+
+export function Toolbar({ onAddRow, onAddColumn }: ToolbarProps) {
   const handleAction = (action: string) => {
     console.log(`${action} clicked`);
+
+    // Handle specific actions
+    if (action === "Add Row") {
+      onAddRow();
+    } else if (action === "Add Column") {
+      onAddColumn();
+    }
   };
 
   return (
