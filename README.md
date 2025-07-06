@@ -1,6 +1,8 @@
 # Tablify - Smart Spreadsheet Application
 
-A modern, responsive spreadsheet application built with React, TypeScript, and Tailwind CSS. Tablify provides an intuitive interface for data management with real-time editing, multiple sheets, and advanced features.
+**Internship Project Submission**
+
+A modern, responsive spreadsheet application built with React, TypeScript, and Tailwind CSS. This project demonstrates frontend development skills, UI/UX design capabilities, and technical problem-solving abilities for an internship application.
 
 ## 🌐 Live Demo
 [Live URL: https://tabliffy.netlify.app/](https://tabliffy.netlify.app/)
@@ -206,24 +208,22 @@ The project includes:
 - [ ] **Offline Support**: Service worker for offline functionality
 - [ ] **PWA Features**: Installable app with offline capabilities
 
-## 🤝 Contributing
+## 📋 Project Information
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+This is a **project submission for an internship application**, demonstrating:
+- **Frontend Development Skills**: React, TypeScript, Tailwind CSS
+- **UI/UX Design**: Responsive design and modern interface
+- **Problem Solving**: Implementing spreadsheet functionality
+- **Code Quality**: Clean, maintainable code structure
+- **Technical Decision Making**: Trade-offs and implementation choices
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👨‍💻 Author
+## 👨‍💻 Developer
 
 **Shiva Mudipelly**
 - GitHub: [@shivamudipelly](https://github.com/shivamudipelly)
 - Project: [Tablify](https://github.com/shivamudipelly/tablify)
+- **Purpose**: Internship Application Project
 
 ---
 
-**Built with ❤️ using React, TypeScript, and Tailwind CSS** 
+**Built for Internship Application using React, TypeScript, and Tailwind CSS** 
