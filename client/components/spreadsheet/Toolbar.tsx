@@ -4,20 +4,16 @@ import {
   EyeOff,
   ArrowUpDown,
   Filter,
-  Grid3X3,
   Upload,
   Download,
   Share2,
   Plus,
   Bell,
-  User,
   Eye,
   SortAsc,
   SortDesc,
-  Filter as FilterIcon,
   Grid,
   List,
-  ChevronRight,
   ChevronsRight,
   Menu,
   X,
@@ -41,8 +37,8 @@ interface ToolbarProps {
 }
 
 export function Toolbar({
-  onAddRow,
-  onAddColumn,
+  onAddRow: _onAddRow,
+  onAddColumn: _onAddColumn,
   onHideFields,
   onSort,
   onFilter,
@@ -54,7 +50,7 @@ export function Toolbar({
   onSearch,
   isFieldsHidden = false,
   currentView = 'list',
-  selectedColumns = []
+  selectedColumns: _selectedColumns = []
 }: ToolbarProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [showSortMenu, setShowSortMenu] = useState(false);

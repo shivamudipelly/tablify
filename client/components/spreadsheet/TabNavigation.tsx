@@ -64,7 +64,7 @@ export function TabNavigation({
                   onBlur={() => onEditTabIdx && onEditTabIdx(null)}
                   onKeyDown={e => {
                     if (e.key === "Enter" || e.key === "Escape") {
-                      onEditTabIdx && onEditTabIdx(null);
+                      onEditTabIdx?.(null);
                     }
                   }}
                   autoFocus

@@ -1,12 +1,12 @@
-import React, { useState, useMemo, useCallback, useRef, useEffect } from "react";
+import React, { useState, useCallback, useRef, useEffect } from "react";
 import { Toolbar } from "./Toolbar";
 import { TabNavigation } from "./TabNavigation";
 import { StatusBadge } from "./StatusBadge";
 import { PriorityBadge } from "./PriorityBadge";
-import { FileText, Plus, Edit2, ChevronDown, SplitIcon, Search } from "lucide-react";
+import { FileText, Plus, ChevronDown, SplitIcon, Search } from "lucide-react";
 
-type Status = "In-progress" | "Complete" | "Blocked" | "Need to start" | "";
-type Priority = "High" | "Medium" | "Low" | "";
+type Status = "In-progress" | "Complete" | "Blocked" | "Need to start";
+type Priority = "High" | "Medium" | "Low";
 
 interface CellData {
   value: string | number;
@@ -29,6 +29,7 @@ const initialColumns = [
   { id: "I", header: "Amount", type: "number" as const, width: 120 },
 ];
 
+/*
 const initialData: SpreadsheetData[] = [
   {
     A: { value: "Launch new marketing campaign for pro...", type: "text" as const },
@@ -86,17 +87,18 @@ const initialData: SpreadsheetData[] = [
     I: { value: 800000, type: "number" as const },
   },
 ];
+*/
 
 // Generate empty rows to fill up to row 50
-const generateEmptyRows = (startIndex: number, count: number) => {
-  return Array.from({ length: count }, (_, i) => {
-    const row: SpreadsheetData = {};
-    initialColumns.forEach((col) => {
-      row[col.id] = { value: "", type: col.type as any };
-    });
-    return row;
-  });
-};
+// const generateEmptyRows = (startIndex: number, count: number) => {
+//   return Array.from({ length: count }, (_, i) => {
+//     const row: SpreadsheetData = {};
+//     initialColumns.forEach((col) => {
+//       row[col.id] = { value: "", type: col.type as any };
+//     });
+//     return row;
+//   });
+// };
 
 const defaultSheet = () => ({
   name: `Sheet ${Math.floor(Math.random() * 10000)}`,
@@ -245,13 +247,13 @@ export function SpreadsheetView() {
   const MIN_ROW_HEIGHT = 24;
   const [typeDropdownOpen, setTypeDropdownOpen] = useState<string | null>(null);
   const typeDropdownRef = useRef<HTMLDivElement | null>(null);
-  const [questions, setQuestions] = useState([
-    { id: 'Q1', text: 'Revenue Analysis' },
-    { id: 'Q2', text: 'Expense Breakdown' },
-    { id: 'Q3', text: 'Profit Margins' },
-    { id: 'Q4', text: 'Growth Trends' }
-  ]);
-  const [isFetching, setIsFetching] = useState(false);
+  // const [questions, setQuestions] = useState([
+  //   { id: 'Q1', text: 'Revenue Analysis' },
+  //   { id: 'Q2', text: 'Expense Breakdown' },
+  //   { id: 'Q3', text: 'Profit Margins' },
+  //   { id: 'Q4', text: 'Growth Trends' }
+  // ]);
+  // const [isFetching, setIsFetching] = useState(false);
   
   // Toolbar state
   const [isFieldsHidden, setIsFieldsHidden] = useState(false);

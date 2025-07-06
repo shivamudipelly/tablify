@@ -4,6 +4,28 @@
 
 A modern, responsive spreadsheet application built with React, TypeScript, and Tailwind CSS. This project demonstrates frontend development skills, UI/UX design capabilities, and technical problem-solving abilities for an internship application.
 
+## 🎯 **Assignment Requirements Status**
+
+### **✅ Fully Compliant:**
+- **React 18 + TypeScript**: Using Vite with TypeScript  
+- **Tailwind CSS**: Fully implemented with responsive design  
+- **Spreadsheet Experience**: Google Sheets/Excel-like functionality  
+- **All Buttons/Tabs Work**: No dead UI - everything is interactive  
+- **Live URL**: Deployed and accessible  
+- **GitHub Repository**: Clean commit history  
+- **README**: Setup instructions and trade-offs documented  
+- **ESLint + Prettier**: Configured and working  
+- **TypeScript Strict Mode**: Enabled and working  
+
+### **⚠️ Partial Compliance:**
+- **Figma Design Match**: Custom spreadsheet design (not pixel-perfect to Figma)  
+- **react-table**: Custom table implementation instead of react-table library
+
+### **📦 Submission Package:**
+- **Live Demo**: https://tabliffy.netlify.app/
+- **GitHub Repository**: https://github.com/shivamudipelly/tablify/
+- **This README** with setup instructions and trade-offs
+
 ## 🌐 Live Demo
 [Live URL: https://tabliffy.netlify.app/](https://tabliffy.netlify.app/)
 
