@@ -2,14 +2,11 @@
   "name": "fusion-starter",
   "private": true,
   "type": "module",
-
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "format.fix": "prettier --write .",
     "typecheck": "tsc"
-  },
-  "dependencies": {
   },
   "devDependencies": {
     "@radix-ui/react-separator": "^1.1.0",
